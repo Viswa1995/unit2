@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>0r</h1>
+    <button id="dec">Decrement</button>
+    <button id="inc">Increment</button>
+</body>
+</html>
+
+<script>
+document.querySelector("#dec").addEventListener("click",decFun)
+  var counter =0 
+  function decFun(){
+      count--
+     
+      document.querySelector("h1").textContent = counter;
+     
+    } 
+  
+
+    function incFun(){
+      count++
+      
+      document.querySelector("h1").textContent = counter;
+    }
+
+
+document.querySelector("#inc").addEventListener("click",incFun)
+</script>
+
+//document.queryySelector('h1').textcontent=counter;
+//localStorage.setItem("counterValue",counter);
+
+//whenever you are  sending data to local storage--JSON.stringify()
+  //whenever you are  renceiving data from local storage--JSON.parse()
