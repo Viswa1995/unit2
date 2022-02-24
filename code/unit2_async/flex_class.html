@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container {
+           display: flex;
+           border:  5px solid black;
+           /*<1.> flex-direction: row;(default)/column;/row-reverse/column-reverse*/
+
+           /* for large screen -> flex-direction :row ;
+           for small screen -> flex-direction :column ; */
+
+
+           /*<2.> flex-wrap: nowrap/wrap/wrap-reverse */
+
+           /* flex-wrap  used for layout responsive; responsive means after resizing page,
+           pic or text go down ,not pic or text overlap or not shown */
+
+            /* margin: 10px 20px 30px 40px;-->this is shortcut(top,right,bottom,left) */
+            /*<3.> flex-flow--> this is shortcut of flex-direction anf flex-wrap  */
+            /* flex-flow: flex-direction  flex-wrap; */
+            flex-flow: row wrap;
+            /* flex-direction:row;
+            flex-wrap: wrap; */
+
+            /* <4.> justify-content: center; */
+           /* flex-start/flex-end/space-between/space-around/space-evenly */
+           /* justify-content: flex-start(default);/flex-end/space-between/space-around/space-evenly/center -->spacing horizontally*/
+          /* align-items: flex-start(default);/flex-end/center -->spacing vertically*/
+           /* height: 600px; */
+        
+        }
+ 
+       .container > div {
+           color: white;
+           font-size: 20px;
+           text-align: center;
+           padding: 20px;
+           /* height: 100px; */
+          
+            }   
+       .container > div:nth-child(1) {
+           background-color: green;
+           }
+       .container > div:nth-child(2) {
+           background-color: rgb(41, 11, 11);
+         
+           }
+        .container > div:nth-child(3) {
+            background-color: rgb(53, 2, 2);
+            /* order: 1; */
+            /* order: 0(default); */
+            /* order with highest value ,go last; */
+           }
+        .container > div:nth-child(4) {
+            background-color: rgb(52, 14, 112);
+           }
+         .container > div:nth-child(5) {
+            background-color: rgb(9, 100, 50);
+            /* flex-basis: 200px; */
+            /* flex-basis:  used as width; */
+            /* flex-basis: initial width of box if direction is row / height of box if direction is column */
+         }
+       .container > div:nth-child(6) {
+           background-color: rgb(100, 99, 7);
+         }
+         .container > div:nth-child(7) {
+           background-color: rgb(68, 34, 34);
+         }
+        .container > div:nth-child(8) {
+            background-color: rgb(219, 14, 24);
+         }
+        .container > div:nth-child(9) {
+            background-color: rgb(100, 78, 62);
+            /* flex-grow: 1; */
+               /* flex-grow: 1(child->8) & flex-grow: 2(child->9) --> means space child 8:child 9 -->1:2 */
+
+            /* flex-grow --> used for giving entire space to given div  */
+            
+         }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+      <div>Item 4</div>
+      <div>Item 5</div>
+      <div>Item 6</div>
+      <div>Item 7</div>
+      <div>Item 8</div>
+      <div>Item 9</div>
+   </div>
+</body>
+</html>
+
+
+<!-- flex- properties
+1.parent properties
+display
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+2.child properties 
+order
+flex-grow
+flex-basis
+
+--

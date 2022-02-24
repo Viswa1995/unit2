@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&family=Tangerine&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: white;
+        }
+    #container {
+         display: grid;
+        grid-template-columns:repeat(3,300px) ;
+        grid-template-rows: 400px;
+        gap: 20px;
+       justify-content: center;
+       }
+
+    .headline{
+        font-family: 'PT Sans Narrow', sans-serif;
+        text-align: center;
+        font-size: 40PX;
+    }
+
+             /* medium */
+             @media all and (min-width:381px)and (max-width:861px){
+              #container{
+              /* width: 100%; */
+              display: grid;
+              grid-template-columns:repeat(2,auto) ;
+              grid-template-rows: repeat(2,auto);
+
+            }
+
+           /* small */
+           @media all and (min-width:50px)and (max-width:380px){
+              #container{
+              /* width: 100%; */
+              display: grid;
+              grid-template-columns:repeat(1,auto) ;
+              grid-template-rows: repeat(3,auto);
+           }
+
+    </style>
+</head>
+<body>
+    
+    <p class="headline">OUR BLOG</p>
+    <div id="container"> 
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmlQ47zBCQTAW8cHLJXwHnV2zEDIzDPuOw3g&usqp=CAU" alt="">
+             <h4>Black Friday Guide: Best Sales & Discount Codes</h4>
+             <p>By Nancy Ward on July 22,2017</p>
+             <p>Duis ut velit nibh bibenjdum commodo, suspendisse pellentesque mattis augue id euismod.Interdum et malesuada fames</p>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxMyi973RVEH79FM--Fm3Y0FYh0Ps11hjTGw&usqp=CAU" alt="">
+              <h4>The White Sneakers Nearly Every Fashion Girls Own</h4>
+              <p>By Nancy Ward on July 18,2017</p>
+              <p>Nullam scelerisque,lacus sed consequent laoreet,dui enim iaculis leo,eu viverra ex nulla in tellus, Nullam nec ornare tellus, ac fringilla lacus.Ut sit ame </p>
+        </div>
+        <div>
+            <img src="data:image/jpeg;base64,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" alt="">
+             <h4>New York SS 2018 Street Style: Annina Mislin </h4>
+             <p>By Nancy Ward on July 18,2017</p>
+             <p>Proin nec vehicula lorem, a efficitur ex. Nam vehicula nulla velerat tincidunt,sed hendrerit ligula porttitor.
+                Fusce sit amet maximus nunc
+             </p>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

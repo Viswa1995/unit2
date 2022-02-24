@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #navbar {
+            width: 80%;
+            height: 100px;
+            display: flex;
+            background-color: #1c2938;
+            justify-content: space-between;
+            margin: auto;
+
+        }
+
+        #navbar>div {
+            width: 30%;
+            height: 100%;
+            padding: 30px;
+            color: white;
+
+        }
+
+        #navbar>div:first-child {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #navbar>div:last-child {
+            display: flex;
+            justify-content: space-around;
+        }
+        select{
+            background-color: #1c2938;
+            border: 0px;
+            color: white;
+             }
+
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div>MEGAWIDTH</div>
+        <div>
+            <div>Home</div>
+            <div>About</div>
+            <div> Blog</div>
+            <div>
+               <select>
+                  <option value="">Page</option>
+                  <option value="">second</option>
+                  <option value="">third</option>
+               </select> 
+                </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

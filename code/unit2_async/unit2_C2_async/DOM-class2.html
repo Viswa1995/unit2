@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+                <!-- ********************************* -->
+                <!-- intro of 1st class -->
+    <!-- <input id="firstName" type="text" name="name" placeholder="Enter firstName"  />
+    <input id="lastName" type="text" name="gender" placeholder="Enter lastName"/>
+    <input id="age" type="text" name="email" placeholder="Enter age" />
+    <select name="" id="selectTag">
+        <option value="male">Male</option>
+        <option value="female">Female</option>  -->
+
+            <!-- selectTag -->
+     <!-- </select>
+    <button onclick="inputChecking()">Submit</button>
+   <h1 id="h1Tag">Show the output here</h1>  -->
+                   <!-- **************************************** -->
+         <h1 class="h1Tag">I am h1 tag</h1>
+
+          <h2 class="h2Tag">I am h2 tag</h2>
+
+          <p class="para"> I am  p1</p>
+          <p class="para"> I am  p2</p>
+          
+    
+  
+</body>
+</html>
+
+<script>
+                 // *********************************
+                //    intro of 1st class      
+//   input , select/options
+    // function inputChecking(){
+    //     var fName = document.getElementbyId("firstName").value;
+    //     var lNmae= document.getElementbyId("lastName").value;
+    //     var age =  document.getElementbyId("age").value;
+    //     var gender = document.getElementbyId("selectTag").value;
+    //     console.log(selectedValue);
+    //     documen.getElementbyId("h1Tag").innerText = fName +" " +lNmae +" " + age +" " + gender
+
+  //  }
+
+         // intro - DOM element
+        // onClick ="function()"
+        // alert --->alert("message")
+        // getElementById("idTag")
+        // innetText and innerHTML
+        // value ---> input/selectTag
+        // style ---> .style.propertyName="propertyValue"
+
+               // *********************************
+
+       console.log(document.getElementsByClassName("h1Tag")) 
+     // returning an array with elements ---> [h1Tag] ---> O/P ---> [h1.h1Tag]
+
+      console.log(document.getElementsByClassName("para")) 
+      // returning an array with  2 elements ---> [para] ---> O/P ---> [p.para,p.para]
+
+       console.log(document.getElementsByClassName("para")[0]) 
+       // get 1st p tag element
+      
+       console.log(document.getElementsByClassName("para")[0].innerText)  //  O/P ---> I am p1
+
+        var pTags = document.getElementsByClassName("para")
+
+        for(var i=0;i<pTags.length;i++){
+            console.log(pTags[i].innerText);
+            
+        }
+
+
+     
+</script>

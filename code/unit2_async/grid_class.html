@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+           display: grid;
+           margin: 10px;
+           /* grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px; */
+           /* grid-template-rows: 100px 100px 100px 100px 100px 100px ; */
+           /* repeat(no of times you want to repeat,size) */
+           /* grid-template-columns:repeat(10,100px); */
+           /* grid-template-rows:repeat(6,100px); */
+           /* grid-template-columns:repeat(4,1fr); grid-template-columns: 25% 25% 25% 25%; grid-template-columns: 1fr 1fr 1fr 1fr; */
+           grid-template-columns:repeat(3,1fr);
+           grid-template-rows: repeat(2,100px);
+           grid-row-gap: 10px;
+          grid-column-gap:20px;
+          /* grid-gap:20px; >>>>  / gap:(row column); >>> /gap:20px 40px; */
+          
+           }
+       .container > div {
+           font-size: 2em;
+           color: #ffeead;
+           text-align: center;
+             }
+         
+    
+        body {
+         background-color: #ffeead;
+         margin: 10px;
+         }
+             
+         .a {
+           background-color: green;
+           }
+         .b {
+           background-color: rgb(41, 11, 11);
+         
+           }
+         .c {
+            background-color: rgb(200, 200, 0);
+            grid-area: 1/2/2/3;
+           }
+        .d {
+            background-color: rgb(52, 14, 112);
+            /* grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 2; */
+            grid-area: 1/1/2/2;
+
+           }
+        .e {
+            background-color: rgb(9, 100, 50);
+          }
+        .f {
+           background-color: rgb(100, 99, 7);
+           grid-area: 1/3/2/4;
+         }
+         .g {
+           background-color: rgb(68, 34, 34);
+         }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="d">D</div>
+        <div class="e">E</div>
+        <div class="f">F</div>
+        
+        
+     </div>
+</body>
+</html>
+
+
+<!-- 100% >>> 50% 50% >>> 1fr 1fr  >>> repeat(2,1fr)
+100% >>> 33% 33% 33% >>> 1fr 1fr 1fr >>> repeat(3,1fr)
+100% >>> 25% 25% 25% 25% >>> 1fr 1fr 1fr 1fr >>> repeat(4,1fr)
+100% >>> 20% 20% 20% 20% >>> 1fr 1fr 1fr 1fr 1fr >>> repeat(5,1fr)  -->
+
+
+grid-template-areas:
+""
+""
+""

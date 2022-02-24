@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+                 <!-- ********************** -->
+                  <!-- onClick --- predefined word like var -->
+
+              <!-- <button onclick="myFunction()">Click Me</button> -->
+                 
+               <!-- ********************** -->
+                <!-- getElementById -->
+
+             <!-- <h1 id="h1Tag">I am h1 tag</h1>  -->
+            <!-- <p id="pTag">I am p tag</p>
+           <div id="divTag">I am a div</div> --> -->
+  
+               <!-- textContent/ innerText   -->
+               <!-- <h2 id="h2Tag">     I am h2 tag      </h2> -->
+
+        <!-- <div id="container">
+            <p>I am inside div tag </p>
+            <h1>I am h1 inside div </h1>
+        </div> -->
+
+
+
+        <h1 id="h1Tag">0</h1>
+        <button onclick="likeFunction()"  id="divTag">Like</button>
+
+
+</body>
+</html>
+                
+
+
+                  <!-- javascript code -->
+<script>
+           // js should be written here
+
+           // Naming convention
+           //   camelCaase
+       //  Masai School   ---> masaiSchool
+          //  browser console
+
+        //  var name ="masai" ;
+        //  console.log(name);
+
+        //  var nammeObject  = {name:"masai school",place:"Banglore"};
+        //  console.log(nammeObject);
+
+        //  var nammes  = {firstName:"chandra", lastName:"sekhar"};
+         // console.log(nammes);
+
+        //  console.log(document)
+          //entire html document is an object
+
+         // DOM -Document Object Model
+         // Whenever html document is loaded on browser corresponding to that documentan
+        //  an  object representation will be created
+
+        //  console.log(document)
+        //  console.log(document.body)
+        //  console.log(document.head)
+        //  console.log(document.title) // o/p-- DOM
+   
+    
+        //  topic: 
+        //  onClick 
+        //  alert  
+        //  getElementById --getting element by its tag name
+        //  innerText /textContent
+        //  innerHTML
+
+
+                //   ***************************************
+                // <1.> onClick --- predefined word like var
+                //     var count =0;
+                // function myFunction() {
+                    
+                //     console.log("Someone Clicked Me")
+                //     count++;
+                //     console.log(count);
+                //     alert("your count is" +count)
+                //       }
+       
+       //alert
+       //syntax: alert("Someone Clicked Me")
+
+                    // *************************************
+             //   <2.>    getElementById --getting element by its tag name
+              // syntax - getElementById("idName")
+
+              // I want to get h1 by referring to its id
+
+        //   console.log(document.getElementById("h1Tag"));
+        //   console.log(document.getElementById("h1Tag").innerText);
+        //   console.log(document.getElementById("h1Tag").textContent);
+
+        //   console.log(document.getElementById("divTag")); 
+        //   console.log(document.getElementById("divTag").innerText); 
+        //   console.log(document.getElementById("divTag").textContent); 
+          
+
+        //   console.log(document.getElementById("pTag"));
+        //   console.log(document.getElementById("pTag").innerText);
+
+        //   console.log(document.getElementById("h2Tag").innerText); 
+
+                //  ********************************** 
+                         //  innerHTML
+
+
+        //   console.log(document.getElementById("container"))      //  O/P :  // div id="container">
+                                                                              //   <p>I am inside div tag </p>
+                                                                             //     <h1>I am h1 inside div </h1>
+                                                                              //    </div>
+
+          //innerText
+    //      console.log(document.getElementById("container").innerText)   // O/P :  // I am inside div tag 
+                                                                                  // I am h1 inside div
+
+
+          //  innerHTML
+      //   console.log(document.getElementById("container").innerHTML)     // O/P :  //  <p>I am inside div tag </p>
+                                                                                   //  <h1>I am h1 inside div </h1>
+        
+   //  if not tags in div then both results of innerTex & innerHTML are same......
+
+                    //   **************************************************
+
+                //    updating new value
+          //  console.log(document.getElementById("h1Tag").innerText = "I am updated h1 tag")      
+                   //          or
+             //  var h1Tag = document.getElementById("h1Tag");
+             //   h1Tag.innerText = "I am updated h1 tag";
+              //  console.log(document.getElementById("h1Tag"));
+
+  // document.getElementById("h2Tag").innerText = "I am updated h2 tag";
+
+  // document.getElementById("pTag").innerText = "I am updated p tag";
+
+//console.log(document.getElementById("h1Tag").innerText);
+    
+
+          // var count =0;
+         //  function likeFunction(){
+         //   count++;
+         //   document.getElementById("h1Tag").innerText = count ;
+          //    }
+    
+    document.getElementById("h1Tag").innerHTML = "<p>I am updated h2 tag </p>" ;
+     
+
+
+</script>
